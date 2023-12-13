@@ -30,6 +30,10 @@
   font-weight: bold;
 }
 
+.section2_button:hover{
+  color: colors.$red;
+}
+
 .button:hover {
   color: colors.$red;
   text-decoration: none;

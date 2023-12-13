@@ -99,6 +99,10 @@ nav a:hover {
   padding-left: 80rem;
 }
 
+.description_h2 {
+  font-size: 2rem;
+}
+
 .description {
   width: 50%;
   height: 50rem;
@@ -390,6 +394,10 @@ body {
   font-weight: bold;
 }
 
+.section2_button:hover {
+  color: #B31312;
+}
+
 .button:hover {
   color: #B31312;
   text-decoration: none;
@@ -570,6 +578,24 @@ body {
     min-width: 100%;
     max-width: 100%;
   }
+}
+.description_werken {
+  width: 50%;
+  height: 100%;
+  background: #ebe9e9;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 2rem;
+}
+
+.description_h2 {
+  color: #000000;
+  font-size: 2rem; /* Adjust the font size as needed */
+  font-weight: bold;
+  margin-bottom: 1rem; /* Add some bottom margin for spacing */
 }
 
 /*# sourceMappingURL=style.css.map */
