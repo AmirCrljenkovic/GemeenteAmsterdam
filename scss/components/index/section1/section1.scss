@@ -1,0 +1,188 @@
+@use "../../colors/colors.scss";
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: colors.$white;
+    padding-top: 4rem;
+    padding-bottom: 20rem;
+
+    &_wrapper {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+}
+.main_description{
+    font-size: 1rem; 
+    color: colors.$black;
+    padding: 5rem;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    font-weight: bold; 
+    padding-left: 80rem;
+}
+
+.description {
+
+    width: 50%;
+    height: 50rem;
+    background: colors.$smoke;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 2rem;
+
+    &_titel {
+        color: colors.$red;
+        font-size: 200%;
+        text-align: center;
+    }
+
+    &_text {
+        max-width: 77.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        &_wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+        }
+    }
+
+    &_p {
+        font-size: 90%;
+        font-weight: 400;
+
+    }
+}
+
+.slider {
+    width: 50%;
+    position: relative;
+
+
+    &_slide {
+        width: 100%;
+        height: 50rem;
+        
+        
+    }
+
+    &_img {
+        width: 100%;
+        height: 100%;
+        background: colors.$white;
+    }
+
+    &_number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 120%;
+        font-weight: 700;
+        color: colors.$white;
+        background: colors.$red;
+        padding: 0.5rem 1rem;
+    }
+
+    &_text {
+        position: absolute;
+        bottom: 10%;
+        left: 0;
+        font-size: 120%;
+        font-weight: 700;
+        color: colors.$white;
+        background: colors.$red;
+        padding: 0.5rem 1rem;
+    }
+
+}
+
+
+.projecten{
+    width: 100%;
+    height: 100%;
+    background: colors.$white;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+
+    &_wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 4rem;
+        flex-wrap: wrap;
+    }
+
+    &_project{
+        width: 30rem;
+        height: 36.9rem;
+        padding-bottom: 2rem;
+        //border: 0.2rem solid colors.$bright_red;
+        border-radius: 2rem;
+        overflow: hidden;
+        position: relative;
+
+            transition: all 0.5s;
+        &:hover{
+
+            transform: translateY(-5%);
+        }
+
+    }
+
+    &_img{
+        width: 100%;
+        height: 20rem;
+        
+    }
+
+    &_text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0.75rem 1.5rem;
+
+    }
+
+    &_titel{
+        font-size: 120%;
+        font-size: 700;
+        text-align: center;
+    }
+
+    &_description{
+        text-align: center;
+        width: 25ch;
+    }
+
+    &_link{
+        cursor: pointer;
+    }
+
+    &_button{
+        //@include mixins.cta;
+        position: absolute;
+        bottom: 0;
+    }
+}
