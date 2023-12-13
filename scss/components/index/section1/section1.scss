@@ -19,18 +19,17 @@
         overflow: hidden;
     }
 }
-.main_description{
-    font-size: 1rem; 
+.main_description {
+    font-size: 1rem;
     color: colors.$black;
     padding: 5rem;
-    text-transform: uppercase; 
-    letter-spacing: 2px; 
-    font-weight: bold; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
     padding-left: 80rem;
 }
 
 .description {
-
     width: 50%;
     height: 50rem;
     background: colors.$smoke;
@@ -40,6 +39,18 @@
     flex-direction: column;
     gap: 3rem;
     font-size: 2rem;
+
+.description_organisatie{
+    width: 50%;
+    height: 100%;
+    background: colors.$smoke;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 2rem;
+}
 
     &_titel {
         color: colors.$red;
@@ -63,7 +74,6 @@
     &_p {
         font-size: 90%;
         font-weight: 400;
-
     }
 }
 
@@ -71,12 +81,9 @@
     width: 50%;
     position: relative;
 
-
     &_slide {
         width: 100%;
         height: 50rem;
-        
-        
     }
 
     &_img {
@@ -106,11 +113,9 @@
         background: colors.$red;
         padding: 0.5rem 1rem;
     }
-
 }
 
-
-.projecten{
+.projecten {
     width: 100%;
     height: 100%;
     background: colors.$white;
@@ -120,7 +125,7 @@
     flex-direction: column;
     gap: 3rem;
 
-    &_wrapper{
+    &_wrapper {
         width: 100%;
         height: 100%;
         display: flex;
@@ -131,7 +136,7 @@
         flex-wrap: wrap;
     }
 
-    &_project{
+    &_project {
         width: 30rem;
         height: 36.9rem;
         padding-bottom: 2rem;
@@ -140,21 +145,18 @@
         overflow: hidden;
         position: relative;
 
-            transition: all 0.5s;
-        &:hover{
-
+        transition: all 0.5s;
+        &:hover {
             transform: translateY(-5%);
         }
-
     }
 
-    &_img{
+    &_img {
         width: 100%;
         height: 20rem;
-        
     }
 
-    &_text{
+    &_text {
         width: 100%;
         height: 100%;
         display: flex;
@@ -162,25 +164,24 @@
         align-items: center;
         gap: 1.5rem;
         padding: 0.75rem 1.5rem;
-
     }
 
-    &_titel{
+    &_titel {
         font-size: 120%;
         font-size: 700;
         text-align: center;
     }
 
-    &_description{
+    &_description {
         text-align: center;
         width: 25ch;
     }
 
-    &_link{
+    &_link {
         cursor: pointer;
     }
 
-    &_button{
+    &_button {
         //@include mixins.cta;
         position: absolute;
         bottom: 0;
