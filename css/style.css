@@ -75,6 +75,7 @@ nav a:hover {
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: #FFFFFF;
   padding-top: 4rem;
   padding-bottom: 20rem;
@@ -89,6 +90,12 @@ nav a:hover {
   overflow: hidden;
 }
 
+.main_h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .main_description {
   font-size: 1rem;
   color: #000000;
@@ -96,16 +103,27 @@ nav a:hover {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
-  padding-left: 80rem;
 }
 
 .description_h2 {
   font-size: 2rem;
 }
 
-.description {
+.description_main {
   width: 50%;
   height: 50rem;
+  background: #ebe9e9;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 3rem;
+  font-size: 2rem;
+}
+
+.description {
+  width: 50%;
+  height: 100%;
   background: #ebe9e9;
   padding: 2rem 4rem;
   display: flex;
@@ -142,7 +160,7 @@ nav a:hover {
   gap: 0.9rem;
 }
 .description_p {
-  font-size: 90%;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -333,6 +351,7 @@ body {
   margin: 5rem auto;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  padding: 2rem;
 }
 
 .contact-info, .contact-form {
@@ -439,7 +458,9 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
-  padding-left: 80rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section2_organisatie {

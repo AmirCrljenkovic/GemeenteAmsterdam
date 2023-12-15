@@ -5,6 +5,7 @@
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     background: colors.$white;
     padding-top: 4rem;
     padding-bottom: 20rem;
@@ -19,6 +20,12 @@
         overflow: hidden;
     }
 }
+
+.main_h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .main_description {
     font-size: 1rem;
     color: colors.$black;
@@ -26,16 +33,28 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-    padding-left: 80rem;
+    //padding-left: 80rem;
 }
 
 .description_h2{
     font-size: 2rem;
 }
 
-.description {
+.description_main{
     width: 50%;
     height: 50rem;
+    background: colors.$smoke;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 2rem;
+}
+
+.description {
+    width: 50%;
+    height: 100%;
     background: colors.$smoke;
     padding: 2rem 4rem;
     display: flex;
@@ -76,7 +95,7 @@
     }
 
     &_p {
-        font-size: 90%;
+        font-size: 2rem;
         font-weight: 400;
     }
 }
