@@ -5,8 +5,15 @@
     max-width: 100%;
 }
 
+.organisatie_h1 {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: colors.$red;
+}
+
 .section__container-4 {
-    min-height: 100vh;
+    //min-height: 100vh;
     max-width: 100%;
     margin: auto;
     display: grid;
@@ -16,7 +23,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 20rem;
+    padding: 10rem;
 }
 
 .section__content-4 {
@@ -52,7 +59,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    width: calc(20% - 1rem); /* Adjusted width with padding on both sides */
+    width: calc(23% - 1rem); /* Adjusted width with padding on both sides */
     margin: 0.5rem; /* Adjusted margin for spacing between cards */
     padding: 1rem;
 }
