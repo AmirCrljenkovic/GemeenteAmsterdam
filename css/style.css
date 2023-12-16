@@ -317,15 +317,15 @@ nav a:hover {
   gap: 3rem;
 }
 .footer_titel {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .footer_text {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .footer_link {
   text-decoration: underline;
   color: #FFFFFF;
-  font-size: 1.6rem;
+  font-size: 2rem;
   width: max-content;
 }
 .footer_link:hover {
