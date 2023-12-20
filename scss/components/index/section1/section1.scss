@@ -21,7 +21,11 @@
     }
 }
 
-.main_h1{
+.spacer {
+    width: 5rem;
+}
+
+.main_h1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,15 +37,14 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
-    //padding-left: 80rem;
 }
 
-.description_h2{
+.description_h2 {
     font-size: 2rem;
 }
 
-.description_main{
-    width: 50%;
+.description_main {
+    width: 40%;
     height: 50rem;
     background: colors.$smoke;
     padding: 2rem 4rem;
@@ -50,6 +53,8 @@
     flex-direction: column;
     gap: 3rem;
     font-size: 2rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .description {
@@ -63,17 +68,17 @@
     gap: 3rem;
     font-size: 2rem;
 
-.description_organisatie{
-    width: 50%;
-    height: 100%;
-    background: colors.$smoke;
-    padding: 2rem 4rem;
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    gap: 3rem;
-    font-size: 2rem;
-}
+    .description_organisatie {
+        width: 50%;
+        height: 100%;
+        background: colors.$smoke;
+        padding: 2rem 4rem;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 3rem;
+        font-size: 2rem;
+    }
 
     &_titel {
         color: colors.$red;
@@ -101,7 +106,7 @@
 }
 
 .slider {
-    width: 50%;
+    width: 40%;
     position: relative;
 
     &_slide {
@@ -113,31 +118,32 @@
         width: 100%;
         height: 100%;
         background: colors.$white;
+        border-top-right-radius: 10px; 
+        border-bottom-right-radius: 10px; 
+    }
+
+    &_number,
+    &_text {
+        position: absolute;
+        font-size: 120%;
+        font-weight: 700;
+        color: colors.$white;
+        background: colors.$red;
+        padding: 0.5rem 1rem;
+        border-top-right-radius: 10px; 
+        border-bottom-right-radius: 10px; 
     }
 
     &_number {
-        position: absolute;
         top: 0;
         left: 0;
-        font-size: 120%;
-        font-weight: 700;
-        color: colors.$white;
-        background: colors.$red;
-        padding: 0.5rem 1rem;
     }
 
     &_text {
-        position: absolute;
         bottom: 10%;
         left: 0;
-        font-size: 120%;
-        font-weight: 700;
-        color: colors.$white;
-        background: colors.$red;
-        padding: 0.5rem 1rem;
     }
 }
-
 .projecten {
     width: 100%;
     height: 100%;
@@ -163,7 +169,6 @@
         width: 30rem;
         height: 36.9rem;
         padding-bottom: 2rem;
-        //border: 0.2rem solid colors.$bright_red;
         border-radius: 2rem;
         overflow: hidden;
         position: relative;
@@ -205,7 +210,6 @@
     }
 
     &_button {
-        //@include mixins.cta;
         position: absolute;
         bottom: 0;
     }
