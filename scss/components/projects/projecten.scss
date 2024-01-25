@@ -7,7 +7,7 @@
 
 .organisatie_h1 {
     display: block;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: colors.$red;
 }
@@ -28,6 +28,10 @@
 
 .description_p_italic{
     font-style: italic;
+}
+
+.description_p{
+    font-size: 2rem;
 }
 
 .section__content-4 {

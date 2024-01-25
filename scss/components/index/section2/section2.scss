@@ -3,9 +3,11 @@
 .section2 {
   display: flex;
   flex-wrap: wrap;
+  //flex-direction: column;
   justify-content: center;
-  gap: 30rem;
+  gap: 10rem;
   position: relative; /* Add position: relative to make room for absolutely positioned .section2_line */
+  padding-top: 10rem;
 }
 
 .more_info {

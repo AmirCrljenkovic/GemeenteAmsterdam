@@ -5,10 +5,10 @@
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    //align-items: center;
     background: colors.$white;
     padding-top: 4rem;
-    padding-bottom: 20rem;
+    //padding-bottom: 20rem;
 
     &_wrapper {
         width: 90%;
@@ -39,38 +39,51 @@
     font-weight: bold;
 }
 
+.description_main1{
+    width: 50%;
+    height: 50rem;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 3rem;
+    background: colors.$smoke;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 .description_h2 {
     font-size: 2rem;
 }
 
 .description_main {
-    width: 40%;
+    width: 50%;
     height: 50rem;
-    background: colors.$smoke;
     padding: 2rem 4rem;
     display: flex;
     align-items: start;
     flex-direction: column;
     gap: 3rem;
-    font-size: 2rem;
+    background: colors.$smoke;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.description {
+.description_organisatie {
     width: 50%;
-    height: 100%;
+    height: auto;
     background: colors.$smoke;
     padding: 2rem 4rem;
     display: flex;
     align-items: start;
     flex-direction: column;
     gap: 3rem;
-    font-size: 2rem;
+    
+
 
     .description_organisatie {
         width: 50%;
-        height: 100%;
+        height: auto;
         background: colors.$smoke;
         padding: 2rem 4rem;
         display: flex;
@@ -106,7 +119,7 @@
 }
 
 .slider {
-    width: 40%;
+    width: 50%;
     position: relative;
 
     &_slide {
@@ -122,9 +135,21 @@
         border-bottom-right-radius: 10px; 
     }
 
-    &_number,
+    &_number{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 120%;
+        font-weight: 700;
+        color: colors.$white;
+        background: colors.$red;
+        padding: 0.5rem 1rem;
+    }
+
     &_text {
         position: absolute;
+        bottom: 10%;
+        left: 0;
         font-size: 120%;
         font-weight: 700;
         color: colors.$white;
@@ -181,7 +206,7 @@
 
     &_img {
         width: 100%;
-        height: 20rem;
+        height: auto;
     }
 
     &_text {
