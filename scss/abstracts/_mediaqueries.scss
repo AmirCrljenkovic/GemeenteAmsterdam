@@ -70,6 +70,13 @@
         margin: 5px 0;
         font-size: 1rem;
     }
+    .search-button{
+        display: none;
+    }
+
+    .contact-button{
+        display: none;
+    }
 }
 
 @media  screen and (max-width: 1085px) {
@@ -166,4 +173,41 @@
         max-width: 100%;
         height: auto;
     }
+}
+
+@media only screen and (max-width: 730px) {
+    .menu {
+        
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: colors.$smoke-dark;
+        left: 40rem;
+        top: 7rem; // Adjust this value based on your header height
+        border-radius: 1rem;
+        
+        
+    }
+
+}
+
+@media only screen and (max-width: 730px) {
+    .menu {
+        left: 30rem;
+    }
+
+}
+
+@media only screen and (max-width: 522px) {
+    .menu {
+        left: 25rem;
+    }
+
+}
+
+@media only screen and (max-width: 451px) {
+    .menu {
+        left: 20rem;
+    }
+
 }

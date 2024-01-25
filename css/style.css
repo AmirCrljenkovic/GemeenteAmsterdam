@@ -38,7 +38,7 @@ nav a {
   text-decoration: none;
   color: #000000;
   align-items: center;
-  font-size: 2rem;
+  font-size: 5rem;
 }
 
 nav a:hover {
@@ -71,6 +71,86 @@ nav a:hover {
   margin-right: 2rem;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #B31312;
+  margin: 5px 0;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 2rem;
+  font-family: "Arial", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: #dad8d8;
+    left: 40rem;
+    top: 7rem;
+    border-radius: 1rem;
+  }
+  .menu.show {
+    display: flex;
+  }
+  .menu a {
+    border-bottom: 1px solid #FFFFFF;
+  }
+  .menu-icon {
+    display: flex;
+    padding-left: 30rem;
+  }
+  .navbar > a {
+    display: none;
+  }
+  .navbar.show-mobile a {
+    display: block;
+  }
+}
+@media only screen and (max-width: 734px) {
+  .menu-icon {
+    padding-left: 45rem;
+  }
+}
+@media only screen and (max-width: 694px) {
+  .menu-icon {
+    padding-left: 30rem;
+  }
+}
+@media only screen and (max-width: 639px) {
+  .menu-icon {
+    padding-left: 20rem;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .menu-icon {
+    padding-left: 10rem;
+  }
+}
 .main {
   width: 100%;
   height: 100%;
@@ -709,6 +789,12 @@ body {
     margin: 5px 0;
     font-size: 1rem;
   }
+  .search-button {
+    display: none;
+  }
+  .contact-button {
+    display: none;
+  }
 }
 @media screen and (max-width: 1085px) {
   header {
@@ -783,6 +869,32 @@ body {
   .slider_slide {
     max-width: 100%;
     height: auto;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: #dad8d8;
+    left: 40rem;
+    top: 7rem;
+    border-radius: 1rem;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .menu {
+    left: 30rem;
+  }
+}
+@media only screen and (max-width: 522px) {
+  .menu {
+    left: 25rem;
+  }
+}
+@media only screen and (max-width: 451px) {
+  .menu {
+    left: 20rem;
   }
 }
 
